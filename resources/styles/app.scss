@@ -1,0 +1,14 @@
+@import "fonts";
+
+#website-hug{
+    @import "reset";
+    @import "default";
+    @import "colors";
+    @import "btn";
+
+    font-size: 15px;
+    font-family: 'Sofia Pro', sans-serif;
+    @media screen  and  (min-width: 1022px) {
+        font-size: 20px;
+    }
+}

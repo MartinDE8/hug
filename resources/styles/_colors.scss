@@ -1,0 +1,27 @@
+$colors: (
+  "white": #FFFF,
+  "green": #d7ead8,
+  "green1": #c6e1c8,
+  "green2": #679d47,
+  "grey": #505050,
+  "grey2": #919090,
+  "pink": #edb7cc,
+  "pink2": #f6dbe5,
+);
+@each $name, $value in $colors {
+  .text-#{$name}{
+    color: $value;
+  }
+  .bg-#{$name}{
+    background-color: $value;
+  }
+  .border-#{$name}{
+    border-color: $value;
+  }
+  .hover\:text-#{$name}:hover{
+    color: $value;
+  }
+  .hover\:bg-#{$name}:hover{
+    background-color: $value;
+  }
+}
