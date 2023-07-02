@@ -1,5 +1,5 @@
 @use "sass:math";
-$mq: ('sm': 410px,'md': 875px,'lg': 1020px);
+$mq: ('sm': 410px,'md': 875px,'lg': 1020px, 'xl': 1280px);
 $directions: ('t':top,'r':right,'b':bottom,'l':left);
 $widthSizes: (
      "0": 0,
