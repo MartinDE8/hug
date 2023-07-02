@@ -1,12 +1,11 @@
 $colors: (
   "white": #FFFF,
-  "green": #d7ead8,
-  "green1": #c6e1c8,
-  "green2": #679d47,
-  "grey": #505050,
-  "grey2": #919090,
-  "pink": #edb7cc,
-  "pink2": #f6dbe5,
+  "grey": #E8E8E8,
+  "blue": #22527F,
+  "blue2": #0279B5,
+  "lightBlue": #B7EAFF,
+  "orange": #FC7925
+
 );
 @each $name, $value in $colors {
   .text-#{$name}{
