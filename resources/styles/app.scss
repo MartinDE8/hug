@@ -2,12 +2,99 @@
 @import "default";
 @import "colors";
 @import "btn";
+@import "fonts";
+@import "header";
 
-#website-hug{
-    font-size: 15px;
-    font-family: 'Inter', sans-serif;
-    @media screen  and  (min-width: 1022px) {
-        font-size: 22px;
+#hug-index{
+    
+    .index-header{
+        min-height: 100vh;
+        background-image: url(../img/index-header.webp);
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__inner{
+            min-height: 100vh;
+            height: 100%;
+
+            div{
+                max-width: 600px;
+                width: 100%;
+            }
+        }
+    }
+
+    .index-quote{
+        h2{
+            max-width: 900px;
+            margin: auto;
+        }
+    }
+
+    .index-candidates{
+        .container-img-candidates{
+            margin-top: -9em;
+
+            img{
+                max-width: 475px;
+                margin: auto;
+            }
+        }
+    }
+
+    .index-employers{
+        margin-top: -4px;
+        background-image: url('../img/bg-rounded.webp');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .container-img-employers{
+            margin-top: -3em;
+        }
+    }
+
+    .index-benefits{
+        margin-top: -7em;
+
+        .society, .wallet{
+            max-width: 490px;
+            margin: auto;
+
+            img{
+                margin: auto;
+            }
+        }
+
+        .society {
+            img{
+                max-height: 420px;
+               
+            }
+        }
+        
+    }
+}
+
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+
+    #socials{
+        img{
+            transition: all 0.2s ease-in-out;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .logo{
+        max-width: 130px;
+        margin-right: auto;
     }
 }
 

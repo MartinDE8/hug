@@ -1,32 +1,97 @@
 .btn{
-  font-family: "Sofia Pro", sans-serif;
-  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   font-size: 18px;
-  line-height: 1;
   display: inline-block;
   text-decoration: none;
-  transition: all 300ms ease;
-  padding: 8px 28px 16px 28px;
-  min-width: 220px;
+  transition: all 200ms ease;
+  padding: 16px 58px 15px 32px;
+  border-radius: 26.5px;
   text-align : center;
-  border-radius: 30px;
-  
+  font-size: 20px;
+  text-transform: uppercase;
 
-    @media screen  and  (min-width: 720px) {
-        font-size: 20px;
+  &.btn-orange{
+    background-color: $orange;
+    color: white;
+    position: relative;
+
+    &:before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      transform: translateY(-50%);
+      right: 26px;
+      background-image: url('../img/arrow.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 15px;
+      width: 8px;
+      transition: all 0.2s ease-in-out;
     }
 
-    @media screen  and  (min-width: 1022px) {
-        font-size: 25px;
+    &:hover{
+      &:before{
+        right: 20px;
+      }
     }
-}
+  }
 
-.btn-white{
-  color: black;
-  background-color: map-get($colors,'white');
-  border: solid 3px white;
- 
-  &:hover{
-    border: solid 3px map-get($colors, 'pink');
+  &.btn-transparent{
+    background-color: transparent;
+    color: $orange;
+    border: 2px solid $orange;
+    position: relative;
+
+    &:before{
+      content: "";
+      position: absolute;
+      top: 50%;
+      bottom: 50%;
+      transform: translateY(-50%);
+      right: 26px;
+      background-image: url('../img/arrow-orange.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 15px;
+      width: 8px;
+      transition: all 0.2s ease-in-out;
+    }
+
+    &:hover{
+      &:before{
+        right: 20px;
+      }
+    }
+  }
+
+  &.btn-small{
+    padding: 12px 47px 11px 33px;
+    border-radius: 22px;
   }
 }
+
+.link-animate{
+  position: relative;
+
+  &:after{
+    transition: all 0.2s ease-in-out;
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    background-color: $blue;
+  }
+
+  &:hover{
+    &:after{
+      width: 100%;
+    }
+  }
+}
+

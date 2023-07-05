@@ -1,5 +1,5 @@
 @use "sass:math";
-$mq: ('sm': 410px,'md': 875px,'lg': 1020px, 'xl': 1280px);
+$mq: ('sm': 640px,'md': 768px,'lg': 1024px, 'xl': 1280px, 'xxl': 1536px);
 $directions: ('t':top,'r':right,'b':bottom,'l':left);
 $widthSizes: (
      "0": 0,
@@ -40,7 +40,9 @@ $spacing: (
         28: 7rem,
         32: 8rem,
         36: 9rem,
-        40: 10rem
+        40: 10rem,
+        60: 15rem,
+        72: 18rem,
 );
 $fontSize: (
     "xs": 0.75rem, /* 12px */
@@ -330,12 +332,19 @@ $align: (center,left,right);
 .container {
     @extend .w-full, .max-w-full, .ml-auto, .mr-auto;
     @media screen  and  (min-width: map-get($mq,'sm')) {
-        max-width: 480px;
+        max-width: 640px;
     }
     @media screen  and  (min-width: map-get($mq,'md')) {
-        max-width: 845px;
+        max-width: 768px;
     }
     @media screen  and  (min-width: map-get($mq,'lg')) {
-        max-width: 1022px;
+        max-width: 1024px;
     }
+    @media screen  and  (min-width: map-get($mq,'xl')) {
+        max-width: 1280px;
+    }
+    @media screen  and  (min-width: map-get($mq,'xxl')) {
+        max-width: 1536px;
+    }
+    
 }

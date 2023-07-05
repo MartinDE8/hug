@@ -4,6 +4,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+		<!--Metas -->
 		<title>Hug title</title>
 		<meta name="description" content="Hug description">
 
@@ -16,7 +18,7 @@
 		<!--CSS -->
 		<link  rel="stylesheet" href="assets/styles/app.css">
 
-		<!-- Load header / Footer -->
+		<!-- Load header / Footer (JQuery needed) -->
 		<script src="https://code.jquery.com/jquery-3.3.1.js"
 		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 		crossorigin="anonymous"></script>
@@ -25,15 +27,94 @@
 			$("#header").load("header.html"); 
 			$("#footer").load("footer.html"); 
 			});
-		</script>	
+		</script>
 	</head>
-	<body>
-		<header id="header"></header>
+	
+	<body>	
+		<main id="hug-index">
+			<!-- Render header.html -->
+			<header id="header"></header>
 
-		<div id="website-hug">
-			<div></div>
-		</div>
+			<!-- Content index-->
+			<section class="index-header">
+				<div class="container px-4">
+					<div class="index-header__inner flex items-center justify-end">
+						<div>
+							<h1>Welcome to <span>Hug</span></h1>
+							<p>The Hug Agency is launching recruitment services globally to give 100% of our profits back to the worker and society. We’re a social impact company designed to do good, in a sustainable way.</p>
+							<a href="" class="btn btn-orange">Register today</a>
+						</div>
+					</div>
 
-		<footer id="footer"></footer>
+				</div>
+			</section>
+
+			<section class="index-quote bg-gradient-blue">
+				<div class="container px-4 py-40">
+					<h2 class="text-center">Wouldn’t it be great to give every new worker additional financial stability, irrespective of their backgrounds?
+					</h2>
+				</div>
+			</section>
+
+			<section class="index-candidates bg-gradient-lightBlue">
+				<div class="container px-4 py-36">
+
+					<div class="flex">
+						<div class="container-img-candidates w-1/2 pr-10">
+							<img src="assets/img/candidates.webp" alt="Candidates picture">
+						</div>
+						<div class="w-1/2 pl-10">
+							<h3>For Candidates</h3>
+							<p>When we find you a new job via Hug we gift 100% of our net profits to you and society. Yours is allocated in the form of a "Hug Balance" which you can access after two years. When you consider the average recruitment agency introduction fee equates to a significant percentage of an annual salary, this can be a very meaningful amount.</p>
+							<a href="" class="btn btn-orange">Learn more</a>
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="index-employers">
+				<div class="container pl-4 pb-72">
+
+					<div class="flex">
+						<div class="w-5/12 pr-10">
+							<h3>For Employers</h3>
+							<p>The idea behind Hug's mission was hatched with the intention of capitalising on the $400B annual global recruitment market to benefit society. Importantly, this is not achieved at an additional expense for our clients and we remain commercially competitive within the market. We reassign our net profits to achieve our goal and in doing so we unlock further benefits for our clients.</p>
+							<p>By working with us you can gain a competitive edge, improve your staff loyalty and retention, evidence your CSR and benefit from industry leading rebate terms.</p>
+							<div class="flex items-center">
+								<a href="" class="btn btn-transparent mr-2">Learn more</a>
+								<a href="" class="btn btn-orange ml-2">Book a call</a>
+							</div>
+						</div>
+						<div class="container-img-employers w-7/12 pl-10">
+							<img src="assets/img/employers.webp" alt="Employers picture">
+						</div>
+					</div>
+
+				</div>
+			</section>
+
+			<section class="index-benefits">
+				<div class="container pb-36">
+					<div class="flex">
+						<div class="society w-1/2">
+							<img
+							 src="assets/img/society.webp" alt="Picture society">
+							<h4 class="mt-6">For a Better Society</h4>
+							<p>Not everyone is able to work, but it doesn’t mean Hug can't help them. We give 60%-70% of our profits to the new hire and the remainder we use to support charity, in a sustainable way. In our mission to help recapitalise society, we've designed our business model to benefit everyone.</p>
+						</div>
+						<div class="wallet w-1/2">
+							<img src="assets/img/wallet.webp" alt="Picture wallet">
+							<h4 class="mt-6 pt-10">For a Better Economy</h4>
+							<p>When families have more wealth and security there is more consumer confidence, which stimulates consumer demand. This helps businesses to produce more goods and services and enables them to employ more people. This generates more tax for the government and helps create a strong economy. </p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- End Content homepage-->
+
+			<!-- Render footer.html -->
+			<footer id="footer"></footer>
+		</main>
 	</body>
 </html>

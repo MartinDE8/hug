@@ -1,3 +1,9 @@
+$grey: #E8E8E8;
+$blue:  #22527F;
+$blue2: #0279B5;
+$lightBlue: #B7EAFF;
+$orange: #FC7925;
+
 $colors: (
   "white": #FFFF,
   "grey": #E8E8E8,
@@ -23,4 +29,13 @@ $colors: (
   .hover\:bg-#{$name}:hover{
     background-color: $value;
   }
+}
+
+//Gradients
+.bg-gradient-blue{
+  background: linear-gradient(180deg, #05B1DB 0%, #05B1DB 0%, #0279B5 100%);
+}
+
+.bg-gradient-lightBlue{
+  background: linear-gradient(180deg, #FFF 0%, #B7EAFF 100%);
 }
