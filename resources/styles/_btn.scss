@@ -1,15 +1,24 @@
 .btn{
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   display: inline-block;
   text-decoration: none;
   transition: all 200ms ease;
-  padding: 16px 58px 15px 32px;
+  padding: 10px 45px 10px 22px;
   border-radius: 26.5px;
   text-align : center;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: 1536px) {
+    font-size: 20px;
+    padding: 16px 58px 15px 32px;
+  }
 
   &.btn-orange{
     background-color: $orange;
@@ -27,8 +36,8 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
-      height: 15px;
-      width: 8px;
+      height: 17px;
+      width: 10px;
       transition: all 0.2s ease-in-out;
     }
 
@@ -69,13 +78,41 @@
   }
 
   &.btn-small{
-    padding: 12px 47px 11px 33px;
+    padding: 8px 38px 8px 19px;
     border-radius: 22px;
+
+    &:before{
+      right: 19px;
+      height: 15px;
+      width: 8px;
+    }
+
+    &:hover{
+      &:before{
+        right: 14px;
+      }
+    }
+
+    @media screen and (min-width: 1536px) {
+      font-size: 20px;
+      padding: 12px 47px 11px 33px;
+
+      &:before{
+        right: 23px;
+      }
+  
+      &:hover{
+        &:before{
+          right: 18px;
+        }
+      }
+    }
   }
 }
 
 .link-animate{
   position: relative;
+  width: fit-content;
 
   &:after{
     transition: all 0.2s ease-in-out;

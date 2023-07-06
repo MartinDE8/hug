@@ -36,11 +36,27 @@
 
     .index-candidates{
         .container-img-candidates{
-            margin-top: -9em;
+            margin-top: -7em;
+
+            @media screen and (min-width: 1280px) {
+                margin-top: -9em;
+            }
+
+            @media screen and (min-width: 1536px) {
+                margin-top: -12em;
+            }
 
             img{
-                max-width: 475px;
+                max-width: 300px;
                 margin: auto;
+
+                @media screen and (min-width: 1280px) {
+                    max-width: 360px;
+                }
+
+                @media screen and (min-width: 1536px) {
+                    max-width: 475px;
+                }
             }
         }
     }
@@ -53,16 +69,41 @@
         background-size: cover;
 
         .container-img-employers{
-            margin-top: -3em;
+            img{
+                margin-top: -3em;
+                max-width: 85%;
+                margin-left: auto;
+            }
         }
     }
 
     .index-benefits{
-        margin-top: -7em;
+        margin-top: -5em;
+
+        @media screen and (min-width: 1280px) {
+            margin-top: -7em;
+        }
+
+        @media screen and (min-width: 1536px) {
+            margin-top: -9em;
+        }
 
         .society, .wallet{
-            max-width: 490px;
-            margin: auto;
+            max-width: 375px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .img-container{
+                min-height: 420px;
+            }
+
+            @media screen and (min-width: 1280px) {
+                max-width: 400px;
+            }
+
+            @media screen and (min-width: 1536px) {
+                max-width: 505px;
+            }
 
             img{
                 margin: auto;
@@ -75,7 +116,12 @@
                
             }
         }
-        
+
+        .wallet{
+            img{
+                max-width: 75%;
+            }
+        }
     }
 }
 
@@ -100,3 +146,18 @@ header{
     }
 }
 
+footer{
+    background-color: $grey;
+
+    p, a{
+        font-size: 16px;
+    }
+
+    img{
+        margin-bottom: 1em;
+    }
+
+    #socials{
+        margin-bottom: 1.5em;
+    }
+}
