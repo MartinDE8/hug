@@ -64,7 +64,7 @@ $fontSize: (
 );
 $display: ('block','flex','inline-block');
 $f_direction: ('row':row,'row-reverse':row-reverse,'col':column,'col-reverse':column-reverse);
-$f_align: ('start','center','end');
+$f_align: (start,center,end);
 $f_justify: ('between':space-between,'around':space-around,'start':flex-start,'center':center,'end':flex-end);
 $positions: (relative,absolute);
 $align: (center,left,right);
@@ -124,31 +124,37 @@ $align: (center,left,right);
         }
     }
 }
+
 @each $value in  $display{
     .#{$value}{
         display: #{$value};
     }
 }
+
 @each $name,$value in $f_direction {
     .flex-#{$name}{
         flex-direction: $value;
     }
 }
+
 @each $value in $f_align {
     .items-#{$value}{
         align-items: #{$value};
     }
 }
+
 @each $name,$value in $f_justify {
     .justify-#{$name}{
         justify-content: $value;
     }
 }
+
 @each $value in $positions {
     .#{$value}{
         position: $value;
     }
 }
+
 @each $value in $align {
     .text-#{$value}{
         text-align: $value;

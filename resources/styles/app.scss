@@ -36,7 +36,11 @@
 
     .index-candidates{
         .container-img-candidates{
-            margin-top: -7em;
+            margin-top: -5em;
+
+            @media screen and (min-width: 768px) {
+                margin-top: -7em;
+            }
 
             @media screen and (min-width: 1280px) {
                 margin-top: -9em;
@@ -47,8 +51,12 @@
             }
 
             img{
-                max-width: 300px;
+                max-width: 240px;
                 margin: auto;
+
+                @media screen and (min-width: 768px) {
+                    max-width: 300px;
+                }
 
                 @media screen and (min-width: 1280px) {
                     max-width: 360px;
@@ -70,15 +78,23 @@
 
         .container-img-employers{
             img{
-                margin-top: -3em;
+                margin-top: -1em;
                 max-width: 85%;
                 margin-left: auto;
+
+                @media screen and (min-width: 768px) {
+                    margin-top: -3em;
+                }
             }
         }
     }
 
     .index-benefits{
-        margin-top: -5em;
+        margin-top: -3em;
+
+        @media screen and (min-width: 768px) {
+            margin-top: -5em;
+        }
 
         @media screen and (min-width: 1280px) {
             margin-top: -7em;
@@ -94,7 +110,10 @@
             margin-right: auto;
 
             .img-container{
-                min-height: 420px;
+                min-height: 300px;
+                @media screen and (min-width: 768px) {
+                    min-height: 420px;
+                }
             }
 
             @media screen and (min-width: 1280px) {
@@ -112,7 +131,10 @@
 
         .society {
             img{
-                max-height: 420px;
+                max-height: 300px;
+                @media screen and (min-width: 768px) {
+                    max-height: 420px;
+                }
                
             }
         }
@@ -141,8 +163,16 @@ header{
         }
     }
     .logo{
-        max-width: 130px;
+        max-width: 85px;
         margin-right: auto;
+
+        @media screen and (min-width: 1024px) {
+            max-width: 100px;
+        }
+        
+        @media screen and (min-width: 1536px) {
+            max-width: 130px;
+        }
     }
 }
 
@@ -151,10 +181,38 @@ footer{
 
     p, a{
         font-size: 16px;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
     }
 
-    img{
+    h5{
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            text-align: left;
+        }
+    }
+
+    .logo{
+        max-width: 100px;
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 1em;
+
+        @media screen and (min-width: 768px) {
+            margin-left: unset; 
+        }
+
+        @media screen and (min-width: 1024px) {
+           max-width: 115px;
+        }
+
+        @media screen and (min-width: 1280px) {
+           max-width: 130px;
+        }
     }
 
     #socials{

@@ -11,16 +11,29 @@ header{
         }
         
         .logo{
-            margin-top: -1em;
-            max-width: 130px;
+            max-width: 85px;
             margin-right: auto;
 
-            @media screen and (max-width: 1280px) {
-                max-width: 110px;
+            @media screen and (min-width: 768px) {
+                margin-top: -1em;
+            }
+
+            @media screen and (min-width: 1024px) {
+                max-width: 100px;
+            }
+        
+            @media screen and (min-width: 1536px) {
+                max-width: 130px;
             }
         }
 
         #socials{
+            display: none;
+    
+            @media screen and (min-width: 768px) {
+                display: flex;
+            }
+
             img{
                 transition: all 0.2s ease-in-out;
                 @media screen and (max-width: 1280px) {
@@ -30,9 +43,109 @@ header{
 
                 &:hover{
                     transform: scale(1.1);
+                }
+            }    
+        }
+
+        .nav-desk{
+            display: none;
+
+            @media screen and (min-width: 768px) {
+                display: flex;
+            }
+        }
+
+        .nav-burger{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease-in-out;
+
+            @media screen and (min-width: 768px) {
+                display: none;
+            }
+           
+    
+            .hamburger{
+                position: relative;
+                background-color: transparent;
+                cursor: pointer; 
+                overflow: visible;
+                transition-duration: 0.15s;
+                transition-property: opacity, filter;
+                transition-timing-function: linear;
+    
+                .hamburger-box{
+                    position: relative;
+                    height: 30px;
+                    width: 33px;
+    
+                    .hamburger-inner{
+                        display: block;
+                        position: absolute;
+                        top: 50%;
+                        background-color: $blue;
+                        height: 3px;
+                        width: 33px;
+                        transition-property: transform;
+                        transition-timing-function: ease;
+                        transition-duration: 0.3s;
+
+                        &:before{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            top: -9px;
+                            background-color: $blue;
+                            height: 3px;
+                            width: 33px;
+                            transition-duration: 0.15s;
+                            transition-property: transform;
+                            transition-timing-function: ease;
+                            transition: top 0.1s 0.34s ease-in, opacity 0.1s ease-in;
+                        }
+    
+                        &:after{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            bottom: -9px;
+                            background-color: $blue;
+                            height: 3px;
+                            width: 33px;
+                            transition-duration: 0.15s;
+                            transition-property: transform;
+                            transition-timing-function: ease;
+                            transition: bottom 0.1s 0.34s ease-in, transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19), -webkit-transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+                        }
+    
+                    }
+                }
+    
+                &.active{
+                    .hamburger-box{
+                        .hamburger-inner{
+                            transform: rotate(225deg);
+                            transition-delay: 0.14s;
+                            transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    
+                            &:before{
+                                top: 0;
+                                opacity: 0;
+                                transition: top 0.1s ease-out, opacity 0.1s 0.14s ease-out;
+                            }
+    
+                            &:after{
+                                bottom: 0;
+                                transform: rotate(-90deg);
+                                transition: bottom 0.1s ease-out, transform 0.3s 0.14s cubic-bezier(0.215, 0.61, 0.355, 1);
+                            }
+                        }
+                    }
+    
+                }
             }
         }
     }
-    
-    }
 }
+
