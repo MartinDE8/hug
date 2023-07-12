@@ -125,7 +125,7 @@
     background-color: $blue;
   }
 
-  &:hover{
+  &:hover, &.selected{
     &:after{
       width: 100%;
     }
