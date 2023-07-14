@@ -382,6 +382,57 @@
     }
 }
 
+#hug-faqs{
+    .accordions-employers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em 2em;
+
+        .accordion{
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid #E2E4E8;
+            background: #FFF;
+
+            .accordion-toggle{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                cursor: pointer;
+                height: 100%;
+                width: 100%;
+                padding: 1.5em;
+                text-align: left;
+
+                p{
+                    font-family: 'Inter', sans-serif;
+                    color: $blue;
+                    font-size: 14px;
+                    font-weight: 500;
+                    letter-spacing: -0.769px;
+                    text-decoration: none;
+                    margin-bottom: 0;
+    
+                    @media screen and (min-width: 1280px) {
+                        font-size: 16px;
+                    }
+    
+                    @media scren and (min-width: 1536px) {
+                        font-size: 18px;
+                    }
+
+                }
+            }
+
+            .accordion-content{
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+            }
+        }
+    }
+}
+
 header{
     position: fixed;
     left: 0;
