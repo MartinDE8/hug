@@ -233,7 +233,7 @@
             @media screen and (min-width: 1024px) {
                 max-width: 300px;
             }
-            
+
             @media screen and (min-width: 1536px) {
                 max-width: 100%;
             }
@@ -279,6 +279,105 @@
         p{
             width: 100%;
             max-width: 860px;
+        }
+    }
+}
+
+#hug-candidates{
+
+    .candidates-header{
+        min-height: 100vh;
+
+        h1{
+            margin-bottom: .5em;
+        }
+
+        &__inner{
+            min-height: calc(100vh - 108px);
+
+            @media screen and (min-width: 768px) {
+                min-height: calc(100vh - 133px);
+            }
+
+            img{
+                display: none;
+
+                @media screen and (min-width: 768px) {
+                    display: block;
+                    margin-right: auto;
+                }
+
+                @media screen and (min-width: 1280px) {
+                    margin-left: -5em;
+                }
+            }
+
+            h2{
+                color: $blue;
+                font-weight: 500;
+                line-height: 1.2;
+
+                span{
+                    color: $blue2;
+                }
+            }
+
+            .content{
+                @media screen and (min-width: 1280px) {
+                    width: 100%;
+                    max-width: 430px;
+                }
+            }
+        }
+    }
+
+    .candidates-video{
+        background-image: url('../img/bg-rounded.webp');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: -5em;
+
+        @media screen and (min-width: 768px) {
+            margin-top: -2px;
+        }
+
+
+    }
+
+    .candidates-vision{
+        background-image: url('../img/bg-rounded.webp');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .candidates-financial{
+
+        .candidates-financial-img{
+            max-width: 220px;
+            margin-left: auto;
+            margin-right: auto;
+
+            @media screen and (min-width: 768px) {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .candidates-recruitment{
+        margin-top: -6em;
+        
+        @media screen and (min-width: 768px) {
+            margin-top: -9em;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-top: -11em;
+        }
+
+        @media screen and (min-width: 1536px) {
+            margin-top: -14em;
         }
     }
 }
