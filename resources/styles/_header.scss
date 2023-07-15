@@ -4,6 +4,15 @@ header{
     right: 0;
     width: 100%;
     z-index: 10;
+    transition: all 0.3s ease-in-out;
+
+    &.scrolled{
+        background-image: url(../img/bg-gradient.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
     
     .container{
         @media screen and (max-width: 1024px) {
@@ -155,7 +164,7 @@ header{
         position: fixed;
         top: 108px;
         border-top: solid 2px $blue;
-        background-color: white;
+        background: linear-gradient(180deg, #FFF 0%, #B7EAFF 100%);
         transform: translateX(-200%);
         transition: all 0.3s ease-in-out;
     
@@ -167,7 +176,4 @@ header{
             display: none;
         }
     }
-    
 }
-
-
