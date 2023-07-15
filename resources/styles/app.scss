@@ -383,16 +383,34 @@
 }
 
 #hug-faqs{
-    .accordions-employers{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1em 2em;
+    .bg-gradient-lightBlue{
+        padding-top: 108px;
 
+        @media screen and (min-width: 768px) {
+            padding-top: 111px;
+        }
+
+        @media screen and (min-width: 1024px) {
+            padding-top: 126px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            padding-top: 136px;
+        }
+
+        @media screen and (min-width: 1536px) {
+            padding-top: 169px;
+        }
+    }
+
+    .accordions-container{
+    
         .accordion{
             width: 100%;
             border-radius: 10px;
             border: 1px solid #E2E4E8;
             background: #FFF;
+            transition: all 0.4s ease-in-out;
 
             .accordion-toggle{
                 display: flex;
@@ -427,9 +445,40 @@
             .accordion-content{
                 max-height: 0;
                 overflow: hidden;
-                transition: max-height 0.2s ease-out;
+                transition: max-height 0.4s ease-out;
+
+                &__inner{
+                    padding: 0 1.5em 1.5em 1.5em;
+
+                    p, a{
+                        margin-bottom: 0;
+                        font-size: 14px;
+                        color: #4F4F4F;
+                        font-weight: 400;
+
+                        @media screen and (min-width: 1280px) {
+                            font-size: 16px;
+                        }
+        
+                        @media scren and (min-width: 1536px) {
+                            font-size: 18px;
+                        }
+                    }
+
+                    a{
+                        text-decoration: underline;
+                    }
+                }
             }
         }
+    }
+
+    .faqs-hug-questions{
+        margin-top: -4px;
+        background-image: url('../img/bg-rounded.webp');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
