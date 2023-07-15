@@ -17,6 +17,9 @@
 
 		<!--CSS -->
 		<link  rel="stylesheet" href="assets/styles/app.css">
+
+		<!-- AOS -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	</head>
 
 	<body>	
@@ -91,11 +94,12 @@
 		</header>
 		
 		<!-- Content index -->
-		<main id="hug-index">	
+		<main id="hug-index">
+
 			<section class="index-header">
 				<div class="container px-4">
 					<div class="index-header__inner flex items-center justify-end">
-						<div>
+						<div data-aos="fade-left">
 							<h1>Welcome to <span>Hug</span></h1>
 							<p>The Hug Agency is launching recruitment services globally to give 100% of our profits back to the worker and society. We’re a social impact company designed to do good, in a sustainable way.</p>
 							<a href="" class="btn btn-orange">Register today</a>
@@ -119,7 +123,7 @@
 						<div class="container-img-candidates mb-8 md:mb-0 md:w-1/2 md:pr-6 xxl:pr-10">
 							<img src="assets/img/candidates.webp" alt="Candidates picture">
 						</div>
-						<div class="md:w-1/2 md:pl-6 xxl:pl-10">
+						<div data-aos="fade-left" class="md:w-1/2 md:pl-6 xxl:pl-10">
 							<h3>For Candidates</h3>
 							<p>When we find you a new job via Hug we gift 100% of our net profits to you and society. Yours is allocated in the form of a "Hug Balance" which you can access after two years. When you consider the average recruitment agency introduction fee equates to a significant percentage of an annual salary, this can be a very meaningful amount.</p>
 							<div class="flex justify-center lg:items-start">
@@ -134,7 +138,7 @@
 			<section class="index-employers">
 				<div class="container pl-4 pb-28 md:pb-40 xl:pb-50 xxl:pb-72">
 					<div class="flex flex-col-reverse md:flex-row md:items-center">
-						<div class="md:w-5/12 md:pr-6 xxl:pr-10">
+						<div data-aos="fade-right" class="md:w-5/12 md:pr-6 xxl:pr-10">
 							<h3>For Employers</h3>
 							<p>The idea behind Hug's mission was hatched with the intention of capitalising on the $400B annual global recruitment market to benefit society. Importantly, this is not achieved at an additional expense for our clients and we remain commercially competitive within the market. We reassign our net profits to achieve our goal and in doing so we unlock further benefits for our clients.</p>
 							<p>By working with us you can gain a competitive edge, improve your staff loyalty and retention, evidence your CSR and benefit from industry leading rebate terms.</p>
@@ -153,14 +157,14 @@
 			<section class="index-benefits">
 				<div class="container px-4 pb-12 md:pb-18 xl:pb-25 xxl:pb-36">
 					<div class="flex flex-col md:flex-row">
-						<div class="society mb-4 md:mb-0 md:w-1/2 md:pr-6 xxl:pr-10">
+						<div data-aos="fade-right" class="society mb-4 md:mb-0 md:w-1/2 md:pr-6 xxl:pr-10">
 							<div class="img-container">
 								<img src="assets/img/society.webp" alt="Picture society">
 							</div>
 							<h4 class="mt-6">For a Better Society</h4>
 							<p>Not everyone is able to work, but it doesn’t mean Hug can't help them. We give 60%-70% of our profits to the new hire and the remainder we use to support charity, in a sustainable way. In our mission to help recapitalise society, we've designed our business model to benefit everyone.</p>
 						</div>
-						<div class="wallet md:w-1/2 md:pl-6 xxl:pl-10">
+						<div data-aos="fade-left" class="wallet md:w-1/2 md:pl-6 xxl:pl-10">
 							<div class="img-container flex">
 								<img src="assets/img/wallet.webp" alt="Picture wallet">
 							</div>
@@ -230,6 +234,7 @@
 		</footer>
 		
 		<!--  JS -->
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 		<script type="text/javascript" src="assets/scripts/app.js"></script>
 	</body>
 </html>
